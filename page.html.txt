@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street Garage</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #333;
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+nav {
+display: flex;
+justify-content: center;
+background-color: #444;
+}
+nav a {
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+}
+nav a:hover {
+background-color: #555;
+}
+.content {
+padding: 20px;
+}
+.home, .service, .contacts {
+display: none;
+}
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+.social-icons a {
+color: white;
+margin: 0 10px;
+text-decoration: none;
+}
+</style>
+<script>
+function showSection(section) {
+document.querySelectorAll('.content > div').forEach(div => div.style.display = 'none');
+document.querySelector('.' + section).style.display = 'block';
+}
+</script>
+</head>
+<body>
+<header>
+<h1>Street Garage</h1>
+</header>
+<nav>
+<a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+<a href="javascript:void(0)" onclick="showSection('service')">Service</a>
+<a href="javascript:void(0)" onclick="showSection('contacts')">Contacts</a>
+</nav>
+<div class="content">
+<div class="home">
+<h2>Welcome to Street Garage</h2>
+<p>Your one-stop solution for all automotive needs. From repairs to custom modifications, we've got you covered.</p>
+</div>
+<div class="service">
+<h2>Our Services</h2>
+<ul>
+<li>General Maintenance</li>
+<li>Engine Repairs</li>
+<li>Custom Modifications</li>
+<li>Performance Tuning</li>
+<li>Body Work</li>
+</ul>
+</div>
+<div class="contacts">
+<h2>Contact Us</h2>
+<p>Email: info@streetgarage.com</p>
+<p>Phone: +1-800-555-1234</p>
+<div class="social-icons">
+<a href="https://www.facebook.com/yourprofile">Facebook</a>
+<a href="https://www.instagram.com/yourprofile">Instagram</a>
+<a href="https://www.tiktok.com/@yourprofile">TikTok</a>
+</div>
+</div>
+</div>
+<footer>
+<p>&copy; 2024 Street Garage. All rights reserved.</p>
+</footer>
+</body>
+</html>
